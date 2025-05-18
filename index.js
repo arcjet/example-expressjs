@@ -66,10 +66,7 @@ app.use(async (req, res, next) => {
   }
 });
 
-// Serve static HTML
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'hello.html'));
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
