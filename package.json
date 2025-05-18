@@ -19,15 +19,22 @@
     "url": "https://arcjet.com"
   },
   "private": true,
+  "main": "dist/index.js",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "start": "node --env-file .env.local ./index.js"
+    "build": "tsc",
+    "start": "tsc && node --env-file .env.local dist/index.js"
   },
   "dependencies": {
     "@arcjet/inspect": "^1.0.0-beta.7",
     "@arcjet/node": "^1.0.0-beta.7",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
   }
 }
