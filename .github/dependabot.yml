@@ -5,6 +5,10 @@ updates:
     schedule:
       # Our dependencies should be checked daily
       interval: daily
+    assignees:
+      - arcjet/dx-team
+    reviewers:
+      - arcjet/dx-team
     commit-message:
       prefix: deps
       prefix-development: deps(dev)
@@ -22,5 +26,6 @@ updates:
           - arcjet
           - "@arcjet/*"
     ignore:
-      - dependency-name: eslint
-        versions: [">=9"]
+      # Synced with engines field in package.json
+      - dependency-name: '@types/node'
+        versions: ['>=21']
