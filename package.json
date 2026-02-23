@@ -24,13 +24,13 @@
     "start": "tsc && node --env-file .env.local dist/index.js"
   },
   "dependencies": {
-    "@arcjet/inspect": "1.1.0-rc",
-    "@arcjet/node": "1.1.0-rc",
+    "@arcjet/inspect": "1.1.0",
+    "@arcjet/node": "1.1.0",
     "express": "5.2.1"
   },
   "devDependencies": {
     "@types/express": "5.0.6",
-    "@types/node": "20.19.27",
+    "@types/node": "20.19.30",
     "typescript": "5.9.3"
   }
 }
